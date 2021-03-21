@@ -1,0 +1,15 @@
+.titulo {
+  color: tomato;
+}
+
+.cosa {
+  height: 500px;
+  overflow: hidden;
+  margin: 100px;
+  border-radius: 5px;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--INICIO DEL HEAD-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conocé Sionna Art Studio: emprendimiento de arte. Encontrá pinturas con técnica abstracta y macetas de concreto. ">
+    <meta name="keywords"  content="ARTE, MACETAS, CONCRETO, CUADROS, PINTURAS">
+    <link rel="icon" href="media/logoSionna.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="./BOOTS/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SIONNA.</title>
+  </head>
+  <!--FIN DEL HEAD-->
+
+  <!--INICIO DEL BODY-->
+  <body class="bodyFlex">
+    <!--CONTENEDOR PRINCIPAL-->
+    <div class="contenedor bodyFlex">
+      <!--INICIO DEL HEADER-->
+      <header class="header subContenedor">
+        <a href=".">
+          <img
+            src="./media/logoSionna.png"
+            width="100px"
+            alt="Logo de la marca"
+        /></a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href=".">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./pages/cuadros.html"
+                    >Cuadros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/macetas.html">Macetas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/sobrenosotros.html"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--FIN DEL HEADER-->
+
+      <div class="tituloh1">
+        <h1>SIONNA ART STUDIO</h1>
+      </div>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide carouselPinturas"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="media/imagen1.jpg"
+              class="d-block w-100"
+              alt="PinturaRosa"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="media/imagen2.jpg"
+              class="d-block w-100"
+              alt="PinturaGris"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="media/imagen3.jpg"
+              class="d-block w-100"
+              alt="PinturaBlanca"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--CONTENEDOR PRINCIPAL-->
+      <main class="mainFlex container-fluid col-12 border">
+        <!--CAJA CON TITULO-->
+        <!--SECCION 4-->
+        <section class="presentacion col-12">
+          <article>
+            <h2>Nuestra historia</h2>
+            <p>
+              Somos Patricia y Delfina, madre e hija, apasionadas por la pintura
+              y la decoración. Patricia es artista plástica y reliza todo tipo
+              de pinturas en arte abtracto. Delfina ama el estilo minimalista y
+              su especialidad son las macetas de concreto. Te invitamos a
+              conocer nuestra galeria y explorar nuestro arte.
+            </p>
+          </article>
+        </section>
+      </main>
+      <section class="queOfrecemos container-fluid col-12 border">
+        <article class="titulo3 col-12">
+          <h3>Qué hacemos</h3>
+        </article>
+
+        <div class="container-xxl col-12">
+          <div class="row">
+            <div class="servicio col-lg-4">
+              <a class="nav-link" href="./pages/cuadros.html"
+                ><i class="bi bi-palette-fill"></i>
+                <p>Arte abstracto</p>
+              </a>
+            </div>
+            <div class="servicio col-lg-4">
+              <a class="nav-link" href="./pages/cuadros.html"
+                ><i class="bi bi-cart2"></i>
+                <p>Cuadros personalizados</p>
+              </a>
+            </div>
+            <div class="servicio col-lg-4">
+              <a class="nav-link" href="./pages/macetas.html"
+                ><i class="bi bi-trash2-fill"></i>
+                <p>Macetas minimalistas</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sectionCards">
+        <div class="card-group">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="media/paletaRosas.jpg"
+              alt="PaletaColoresRosa"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rosas</h5>
+              <p class="card-text">
+                La gama de los colores rosados brinda relajación a la vista
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="media/paletaPasteles.jpg"
+              alt="PaletaColoresPasteles"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pasteles</h5>
+              <p class="card-text">
+                Estas tonalidades representan la neutralidad, son pacíficas y
+                suaves
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="media/paletaTierra.jpg"
+              alt="PaletaColoresTierra"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tonos tierra</h5>
+              <p class="card-text">
+                Esta paleta de colores aporta confortabilidad, seguridad e
+                incluso familiaridad
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--INICIO FOOTER-->
+      <footer class="footer">
+        <nav>
+          <p class="footer__text">
+            ¡Seguinos y enterate de todas las novedades!
+          </p>
+
+          <ul class="footer__listaIconos">
+            <li class="footer__icono">
+              <span
+                class="iconify"
+                data-icon="akar-icons:instagram-fill"
+                data-inline="false"
+              ></span>
+            </li>
+
+            <li class="footer__icono">
+              <span
+                class="iconify"
+                data-icon="akar-icons:facebook-fill"
+                data-inline="false"
+              ></span>
+            </li>
+          </ul>
+
+          <address class="footer__text">
+            - Hecho con amor en Argentina -
+          </address>
+        </nav>
+      </footer>
+      <!--FIN FOOTER-->
+    </div>
+
+    <script src="./BOOTS/js/bootstrap.js"></script>
+  </body>
+  <!--FIN DEL BODY-->
+</html>

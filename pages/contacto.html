@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--INICIO DEL HEAD-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="¡Estemos en contacto! Escribinos y preguntá lo que quieras.">
+    <meta name="keywords"  content="ARTE, MACETAS, CONCRETO, CUADROS, PINTURAS">
+    <title>Contactate con nosotros</title>
+    <link rel="icon" href="../media/logoSionna.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../BOOTS/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <!--FIN DEL HEAD-->
+
+  <!--INICIO DEL BODY-->
+  <body>
+    <div class="contenedor">
+      <!--INICIO DEL HEADER-->
+      <header class="header subContenedor">
+        <a href="..">
+          <img
+            src="../media/logoSionna.png"
+            width="100px"
+            alt="Logo de la marca"
+        /></a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="..">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="cuadros.html"
+                    >Cuadros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="macetas.html">Macetas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobrenosotros.html"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html"> Contacto </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--FIN DEL HEADER-->
+
+      <!--CAJA CON TITULO-->
+      <div class="tituloh1"><h1>CONTACTANOS</h1></div>
+
+      <!--PARRAFO INFORMATIVO-->
+      <section class="cascada">
+        <h2 class="tituloContacto">
+          Creemos que es fundamental la buena comunicación a la hora de
+          modificar nuestro hogar. Es por eso que siempre pedimos que nos envíes
+          fotos del espacio que quieras decorar, para poder brindarte el mejor
+          asesoramiento y ayudarte a elegir la paleta de colores, tamaños, y
+          formatos. ¡Escribinos!
+        </h2>
+      </section>
+
+      <!--CONTENEDOR PRINCIPAL-->
+      <main>
+        <form class="form" action="">
+          <label class="form__label" for="nombre">Nombre</label>
+          <input class="form__input" type="text" name="nombre" id="" />
+          <label class="form__label" for="mail">Email</label>
+          <input class="form__input" type="text" name="mail" id="" />
+          <select class="form__dropdown" name="productos" id="productos">
+            <option value="cuadro">Cuadros</option>
+            <option value="maceta">Macetas</option>
+            <option value="ambos">Ambos</option>
+          </select>
+          <textarea
+            class="form__textarea"
+            placeholder="Escribí tu consulta"
+            name="Consulta"
+            id="consulta"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div form__checkbox>
+            <input
+              class="form__input"
+              type="checkbox"
+              name="acepta"
+              value="1"
+            />
+            <label class="form__label" for="acepta"
+              >¿Querés recibir nuestro catalogo y novedades?</label
+            >
+          </div>
+          <input
+            class="form__input form__input_submit"
+            type="button"
+            value="Enviar"
+          />
+          <input
+            class="form__input form__input_reset"
+            type="reset"
+            value="Limpiar"
+          />
+        </form>
+      </main>
+
+      <!--INICIO FOOTER-->
+      <footer class="footer">
+        <nav>
+          <p class="footer__text">
+            ¡Seguinos y enterate de todas las novedades!
+          </p>
+
+          <ul class="footer__listaIconos">
+            <li class="footer__icono">
+              <span
+                class="iconify"
+                data-icon="akar-icons:instagram-fill"
+                data-inline="false"
+              ></span>
+            </li>
+
+            <li class="footer__icono">
+              <span
+                class="iconify"
+                data-icon="akar-icons:facebook-fill"
+                data-inline="false"
+              ></span>
+            </li>
+          </ul>
+
+          <address class="footer__text">
+            - Hecho con amor en Argentina -
+          </address>
+        </nav>
+      </footer>
+      <!--FIN FOOTER-->
+    </div>
+  </body>
+</html>

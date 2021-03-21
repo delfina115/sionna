@@ -1,0 +1,422 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: Moontime;
+  src: url(../media/MoonTime-Regular.otf); }
+
+body {
+  margin: 20px;
+  margin: 20px; }
+
+/*PAGINA HOME*/
+.bodyFlex {
+  background-color: #ece8d9;
+  display: flex;
+  flex-direction: column;
+  gap: 3em; }
+
+.carouselPinturas {
+  max-height: 500px;
+  overflow: hidden;
+  margin: 40px;
+  border-radius: 5px; }
+
+.navbar {
+  background-color: transparent !important; }
+
+.navegadorPrincipal {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  border-style: solid;
+  border-color: #77562b;
+  border-width: 2px; }
+
+.navHijo {
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  border-style: solid;
+  border: 5px;
+  list-style: none; }
+
+.navHijo a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: font-family; }
+
+.queOfrecemos {
+  padding: 30px; }
+
+.row i {
+  font-size: 2.73em; }
+
+.row a {
+  color: black;
+  transition: 0.5s; }
+
+.row a:hover {
+  transform: scale(1.05); }
+
+.queOfrecemos h3 {
+  padding: 30px;
+  color: #615d5d;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
+
+.queOfrecemos .servicio {
+  font-size: large;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  text-align: center; }
+
+.sectionCards {
+  display: flex !important;
+  justify-content: space-evenly !important; }
+
+.card {
+  min-width: 250px;
+  max-width: 250px;
+  height: 350px;
+  margin: 50px !important; }
+
+.card-img-top {
+  width: 250px;
+  height: 200px; }
+
+.card-group {
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%; }
+
+.presentacion h2 {
+  padding: 1em; }
+
+.presentacion p {
+  margin: 1em;
+  padding: 2em;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: large; }
+
+/*ESTILOS GENERALES*/
+.nav {
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: flex-end; }
+
+h1 {
+  color: #818180;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif; }
+
+h2 {
+  height: 20%;
+  background-color: #d4b5b0;
+  color: #615d5d;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center; }
+
+header {
+  background-color: #faf3e0;
+  background-image: url(); }
+
+header li {
+  display: inline; }
+
+header a {
+  text-decoration: none;
+  color: black; }
+
+section {
+  background-color: beige; }
+
+.lista-iconos li {
+  list-style: none; }
+
+.border {
+  border-radius: 5px; }
+
+img {
+  border-radius: 5px; }
+
+p {
+  font-family: "Montserrat", sans-serif; }
+
+/*PAGINA CUADROS*/
+.bodyGrid {
+  background-color: #fffdf6;
+  color: black; }
+
+.contenedorGrid {
+  display: grid;
+  /* Evito dar los márgenes de cada uno de los elementos html */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Lo divido en tres columnas del mismo tamaño */
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 1em; }
+
+header {
+  background-color: #faf3e0;
+  color: #e9ecf4;
+  grid-column-start: 1;
+  /* Le digo al header dónde iniciar y dónde terminar */
+  grid-column-end: 4;
+  display: flex;
+  justify-content: space-between; }
+
+header a {
+  color: #7a7a95;
+  transition: 1s; }
+
+header a:focus {
+  outline: 0; }
+
+header a:hover {
+  background-color: #e2d9cd;
+  color: black; }
+
+.tituloh1 {
+  background-color: #efd9d1;
+  color: #818180;
+  border-style: solid;
+  border-color: #e7dbcc;
+  border-width: 5px;
+  min-height: 150px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* grid-column-start: 1;
+   grid-column-end: 4; Dónde quiero que comience y que termine*/
+  grid-column: span 3;
+  animation-name: animacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: initial;
+  animation-duration: 2s;
+  animation-delay: 2s; }
+
+@keyframes animacion {
+  0% {
+    transform: skew(0.9, 1); }
+  50% {
+    transform: skew(1, 1); }
+  100% {
+    transform: skew(0.9, 1);
+    background-color: #eec5b1; } }
+
+.mainGrid {
+  display: grid;
+  background-color: #ece8d9;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: auto;
+  grid-column: span 3;
+  grid-gap: 2em;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box; }
+
+.mainGrid img {
+  transition: 0.5s;
+  width: 250px;
+  height: 250px; }
+
+.mainGrid img:hover {
+  transform: scale(1.1, 1.1); }
+
+/*PAGINA CONTACTO*/
+.form {
+  text-align: center;
+  background-color: #ece8d9;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 1em;
+  color: white;
+  margin-bottom: 30px; }
+
+.form > * {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  transition: 0.5s; }
+  .form > *:focus {
+    outline: none; }
+
+.form__label {
+  color: black; }
+
+.form__input {
+  border-radius: 5px;
+  padding: 10px; }
+
+.form__dropdown {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white; }
+
+.form__checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px; }
+
+.form__input_submit {
+  background-color: #efd9d1; }
+
+.form__input_reset {
+  background-color: white; }
+
+.form__input_submit:hover,
+.form__input_reset:hover {
+  background-color: lightgrey; }
+
+.cascada h2 {
+  font-size: 16px;
+  padding: 30px; }
+
+h3 {
+  color: #694817;
+  text-align: center; }
+
+/*PAGINA SOBRE NOSOTROS*/
+.borde {
+  border-style: solid;
+  border-color: wheat;
+  border-width: 5px; }
+
+.boxModeling {
+  display: inline;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-style: solid;
+  border-width: 1px; }
+
+.boxModeling li {
+  display: inline; }
+
+.cajita h2 {
+  background-color: white;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #e9e1dc; }
+
+.contenedorSobreNosotros {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 25px;
+  min-height: 400px; }
+
+.flexContainer, .cajaTexto, .cajaIntegrantes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  flex: 1;
+  height: 100%; }
+
+.cajaTexto {
+  text-align: center;
+  flex-direction: column; }
+  .cajaTexto h3 {
+    font-family: Moontime;
+    font-size: 60px; }
+
+.cajaIntegrantes {
+  flex-wrap: wrap;
+  gap: 50px; }
+  .cajaIntegrantes img {
+    width: 200px;
+    height: 200px; }
+  .cajaIntegrantes p {
+    text-align: center;
+    margin: 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px; }
+
+/*FOOTER*/
+.footer {
+  font-size: medium;
+  color: azure;
+  font-weight: bold;
+  text-align: center;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 3;
+  /* El span pide que ocupe las tres columnas */
+  border: 2px solid blanchedalmond;
+  background-image: linear-gradient(#c7a898, #494949);
+  padding: 30px;
+  box-sizing: content-box; }
+
+.footer__listaIconos {
+  display: flex;
+  font-size: 2em;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+  font-weight: bolder;
+  grid-gap: 10px;
+  color: azure; }
+
+.footer__icono {
+  cursor: pointer; }
+
+.footer__icono:hover {
+  transition: 0.5s;
+  transform: scale(1.1); }
+
+.footer__text {
+  font-family: "Poppins", sans-serif; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/*ADAPTACION TABLET PAGINA CUADROS CON MEDIA QUERIES*/
+@media (max-width: 768px) {
+  .mainGrid {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0; } }
+
+/*ADAPTACION MOBILE PAGINA CUADROS CON MEDIA QUERIES*/
+@media (max-width: 576px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+    padding: 50px 0; }
+  .mainGrid img {
+    width: 200px;
+    height: 200px; }
+  .cosa {
+    height: 100%;
+    overflow: hidden;
+    margin: 40px;
+    border-radius: 5px; }
+  .carousel-item img {
+    height: 300px; }
+  .cosa {
+    margin: 10px; } }
