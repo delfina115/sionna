@@ -450,7 +450,6 @@ h3 {
   color: azure;
   font-weight: bold;
   text-align: center;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -458,8 +457,7 @@ h3 {
   /* El span pide que ocupe las tres columnas */
   border: 2px solid blanchedalmond;
   background-image: linear-gradient(#c7a898, #494949);
-  padding: 30px;
-  box-sizing: content-box;
+  padding: 5px;
 }
 
 .footer__listaIconos {
@@ -484,6 +482,14 @@ h3 {
 
 .footer__text {
   font-family: "Poppins", sans-serif;
+}
+
+.footer__text--top {
+  margin: 16px 0 0;
+}
+
+.footer__text--bottom {
+  margin: 0 0 16px;
 }
 
 * {
